@@ -1,0 +1,102 @@
+:root {
+    --fondo: #d9d4d0;
+    --botones: #997f64;
+    --botones-hover: #212e51;
+    --texto-hover: #fff;
+    --texto-normal: #212e51;
+    --bg-usuario: #adb8ba;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    margin: 50px;
+    font-family: 'Krub', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--texto-hover); 
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--fondo);
+}
+
+header {
+    background-color: var(--botones);
+    border-radius: 16px;
+    padding: 20px;
+    margin: 25px;
+}
+
+/* Contenedor principal con Grid */
+.login-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-usuario);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 0;
+    margin: 20px auto;
+}
+/* Estilo del formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.login-form input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login-form button {
+    width: 100%;
+    background-color: var(--botones);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--texto-hover);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+.login-form button:hover {
+    background-color:var(--botones-hover);
+}
+footer {
+    display: grid;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20px;
+}
+footer p {
+    color: var(--texto-normal);
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.error-message p {
+    background: #f8d7da;
+    border-radius: 5px;
+    margin: 0px 20px;
+    padding: 0px;
+    text-align: center;
+}

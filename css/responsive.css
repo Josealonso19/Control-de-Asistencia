@@ -1,0 +1,11 @@
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Responsive styles */
+@media (max-width: 600px) {
+    .login-container {
+        width: 100%;
+    }
+}
